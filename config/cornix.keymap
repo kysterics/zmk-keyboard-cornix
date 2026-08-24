@@ -154,7 +154,7 @@
         };
 
         cb_lm {
-            bindings = <&kp C_PAUSE>;
+            bindings = <&kp PAUSE_BREAK>;
             key-positions = <13 15>;
             layers = <0 1>;
         };
@@ -190,15 +190,15 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB            &kp Q      &kp W     &kp E           &kp R                &kp T                                    &kp U        &kp I      &kp O                &kp P     &kp LBKT   &kp RBKT
-&kp KP_NUMLOCK     &kp A      &kp S     &kp D           &kp F                &kp G                                    &kp J        &kp K      &kp L                &kp SEMI  &kp SQT    &lt 3 NON_US_HASH
-&mt LC(LSHIFT) F5  &kp LSHFT  &kp Z     &kp X           &kp C                &kp V           &kp C_MUTE  &kp C_SLEEP  &kp M        &kp COMMA  &kp PERIOD           &kp FSLH  &kp RSHFT  &kp UP
-&kp LCTRL          &kp F14    &kp LALT  &mt LALT SPACE  &mt LCTRL BACKSPACE  &mt LEFT_GUI B                           &lt 1 SPACE  &lt 2 N    &mt RALT SCROLLLOCK  &kp LEFT  &kp DOWN   &kp RIGHT
+&kp TAB            &kp Q      &kp W     &kp E           &kp R                &kp T                                         &kp U        &kp I      &kp O                &kp P     &kp LBKT   &kp RBKT
+&kp KP_NUMLOCK     &kp A      &kp S     &kp D           &kp F                &kp G                                         &kp J        &kp K      &kp L                &kp SEMI  &kp SQT    &lt 3 NON_US_HASH
+&mt LC(LSHIFT) F5  &kp LSHFT  &kp Z     &kp X           &kp C                &kp V           &kp C_MUTE  &kp C_SLEEP_MODE  &kp M        &kp COMMA  &kp PERIOD           &kp FSLH  &kp RSHFT  &kp UP
+&kp LCTRL          &kp F14    &kp LALT  &mt LALT SPACE  &mt LCTRL BACKSPACE  &mt LEFT_GUI B                                &lt 1 SPACE  &lt 2 N    &mt RALT SCROLLLOCK  &kp LEFT  &kp DOWN   &kp RIGHT
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         num_layer {
