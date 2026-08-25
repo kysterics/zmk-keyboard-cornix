@@ -107,7 +107,7 @@
         mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            bindings = <&mo>, <&kp>;
+            bindings = <&lt>, <&kp>;
 
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
@@ -130,7 +130,7 @@
 
         cb_ltm {
             bindings = <&kp PAUSE_BREAK>;
-            key-positions = <14 16>;
+            key-positions = <16 13>;
             layers = <0 1>;
         };
 
