@@ -171,7 +171,12 @@
         copy_n_dict_lookup: copy_n_dict_lookup {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(C)>, <&macro_press>, <&kp PAUSE_BREAK>;
+            bindings =
+                <&kp LC(A)>,
+                <&macro_wait_time 100>,
+                <&kp LC(C)>,
+                <&macro_wait_time 200>,
+                <&kp PAUSE_BREAK>;
 
             label = "COPY_N_DICT_LOOKUP";
         };
