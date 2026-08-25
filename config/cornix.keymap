@@ -173,9 +173,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LC(A)>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 250>,
                 <&kp LC(C)>,
-                <&macro_wait_time 200>,
+                <&macro_wait_time 250>,
                 <&kp PAUSE_BREAK>;
 
             label = "COPY_N_DICT_LOOKUP";
