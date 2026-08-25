@@ -174,7 +174,7 @@
             bindings =
                 <&kp LC(A)>,
                 <&macro_wait_time 250>,
-                <&kp X>,
+                <&kp LC(X)>,
                 <&macro_wait_time 250>,
                 <&kp PAUSE_BREAK>;
 
