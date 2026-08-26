@@ -147,7 +147,7 @@
 
         layer4 {
             bindings = <&kp DELETE>;
-            key-positions = <2 3>;
+            key-positions = <16 17>;
         };
 
         prev_tab {
