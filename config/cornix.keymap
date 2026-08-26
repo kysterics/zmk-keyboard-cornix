@@ -130,13 +130,13 @@
 
         cb_ltm {
             bindings = <&kp PAUSE_BREAK>;
-            key-positions = <16 13>;
+            key-positions = <12 15>;
             layers = <0 1>;
         };
 
         cb_lm {
             bindings = <&copy_n_dict_lookup>;
-            key-positions = <13 15>;
+            key-positions = <12 3>;
             layers = <0 1>;
         };
 
