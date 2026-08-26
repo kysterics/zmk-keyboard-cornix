@@ -152,17 +152,17 @@
 
         prev_tab {
             bindings = <&kp LC(LG(PG_UP))>;
-            key-positions = <19 20>;
+            key-positions = <7 8>;
         };
 
         next_tab {
             bindings = <&kp LC(LG(PAGE_DOWN))>;
-            key-positions = <20 21>;
+            key-positions = <8 9>;
         };
 
         rename_tab {
             bindings = <&kp LG(F2)>;
-            key-positions = <21 19>;
+            key-positions = <7 9>;
             layers = <0 1>;
         };
     };
