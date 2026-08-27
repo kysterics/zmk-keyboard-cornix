@@ -151,30 +151,35 @@
             layers = <0 1>;
         };
 
-        layer3 {
+        f19 {
             bindings = <&kp F19>;
             key-positions = <15 16 14>;
         };
 
-        layer4 {
+        del {
             bindings = <&kp DELETE>;
-            key-positions = <16 17>;
+            key-positions = <0 1>;
         };
 
         prev_tab {
             bindings = <&kp LC(LG(PG_UP))>;
-            key-positions = <7 8>;
+            key-positions = <9 10>;
         };
 
         next_tab {
             bindings = <&kp LC(LG(PAGE_DOWN))>;
-            key-positions = <8 9>;
+            key-positions = <10 11>;
         };
 
         rename_tab {
             bindings = <&kp LG(F2)>;
-            key-positions = <7 9>;
+            key-positions = <9 11>;
             layers = <0 1>;
+        };
+
+        group_tabs {
+            bindings = <&kp LC(LG(PLUS))>;
+            key-positions = <9 10 11>;
         };
     };
 
