@@ -114,6 +114,17 @@
             quick-tap-ms = <200>;
             label = "Mod Tap";
         };
+
+        lt_no_repeat: lt_no_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&kp>;
+
+            flavor = "balanced";
+            tapping-term-ms = <HM_TAPPING_TERM>;
+            quick-tap-ms = <0>;
+            label = "LT_NO_REPEAT";
+        };
     };
 
     conditional_layers {
@@ -196,10 +207,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB            &kp Q      &kp W     &kp E           &kp R                &kp T                                  &kp U        &kp I      &kp O                &kp P     &kp LBKT   &kp RBKT
-&kp KP_NUMLOCK     &kp A      &kp S     &kp D           &kp F                &kp G                                  &kp J        &kp K      &kp L                &kp SEMI  &kp SQT    &lt 3 NON_US_HASH
-&mt LC(LSHIFT) F5  &kp LSHFT  &kp Z     &kp X           &kp C                &kp V           &kp C_MUTE  &kp LG(L)  &kp M        &kp COMMA  &kp PERIOD           &kp FSLH  &kp RSHFT  &kp UP
-&kp LCTRL          &kp F14    &kp LALT  &mt LALT SPACE  &mt LCTRL BACKSPACE  &mt LEFT_GUI B                         &lt 1 SPACE  &lt 2 N    &mt RALT SCROLLLOCK  &kp LEFT  &kp DOWN   &kp RIGHT
+&kp TAB            &kp Q      &kp W     &kp E           &kp R                &kp T                                  &kp U                  &kp I      &kp O                &kp P     &kp LBKT   &kp RBKT
+&kp KP_NUMLOCK     &kp A      &kp S     &kp D           &kp F                &kp G                                  &kp J                  &kp K      &kp L                &kp SEMI  &kp SQT    &lt 3 NON_US_HASH
+&mt LC(LSHIFT) F5  &kp LSHFT  &kp Z     &kp X           &kp C                &kp V           &kp C_MUTE  &kp LG(L)  &kp M                  &kp COMMA  &kp PERIOD           &kp FSLH  &kp RSHFT  &kp UP
+&kp LCTRL          &kp F14    &kp LALT  &mt LALT SPACE  &mt LCTRL BACKSPACE  &mt LEFT_GUI B                         &lt_no_repeat 1 SPACE  &lt 2 N    &mt RALT SCROLLLOCK  &kp LEFT  &kp DOWN   &kp RIGHT
             >;
 
             sensor-bindings =
