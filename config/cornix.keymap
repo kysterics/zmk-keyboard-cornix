@@ -185,19 +185,19 @@
         pause {
             bindings = <&kp F19>;
             key-positions = <16 14>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <150>;
         };
 
         back {
             bindings = <&kp F19>;
             key-positions = <14 15>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <150>;
         };
 
         forward {
             bindings = <&kp F19>;
             key-positions = <15 16>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <150>;
         };
     };
 
