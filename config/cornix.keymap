@@ -186,13 +186,13 @@
         };
 
         back {
-            bindings = <&kp LS(LA(F19))>;
+            bindings = <&kp LA(LG(F19))>;
             key-positions = <20 19>;
             require-prior-idle-ms = <150>;
         };
 
         forward {
-            bindings = <&kp LS(LA(LC(F19)))>;
+            bindings = <&kp LA(LC(LG(F19)))>;
             key-positions = <20 21>;
             require-prior-idle-ms = <150>;
         };
@@ -210,13 +210,13 @@
         };
 
         vol_down {
-            bindings = <&kp LS(F19)>;
+            bindings = <&kp LG(F19)>;
             key-positions = <26 27>;
             require-prior-idle-ms = <150>;
         };
 
         vol_up {
-            bindings = <&kp LC(LS(F19))>;
+            bindings = <&kp LC(LG(F19))>;
             key-positions = <27 28>;
             require-prior-idle-ms = <150>;
         };
@@ -231,6 +231,11 @@
             bindings = <&kp LC(LA(F19))>;
             key-positions = <27 28 26>;
             require-prior-idle-ms = <150>;
+        };
+
+        cs_a {
+            bindings = <&kp LA(LS(A))>;
+            key-positions = <24 13>;
         };
     };
 
