@@ -266,11 +266,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap>,
                 <&kp LA(LC(LG(Q)))>,
                 <&macro_wait_time 500>,
                 <&kp ESC>,
                 <&macro_wait_time 500>,
+                <&macro_tap>,
                 <&kp LS(F10)>;
 
             label = "SWITCH_AUDIO";
