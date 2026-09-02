@@ -266,9 +266,9 @@
             bindings =
                 <&kp LA(LC(LG(Q)))>,
                 <&macro_release>,
-                <&macro_wait_time 250>,
+                <&macro_wait_time 500>,
                 <&kp ESCAPE>,
-                <&macro_wait_time 150>,
+                <&macro_wait_time 500>,
                 <&kp LS(F10)>;
 
             label = "SWITCH_AUDIO";
