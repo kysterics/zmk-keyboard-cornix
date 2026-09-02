@@ -258,9 +258,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LA(LC(LG(Q)))>,
-                <&macro_wait_time 1000>,
-                <&kp LA(LC(LG(Q)))>,
                 <&macro_wait_time 250>,
+                <&key_repeat>,
+                <&macro_wait_time 150>,
                 <&kp LS(F10)>;
 
             label = "SWITCH_AUDIO";
