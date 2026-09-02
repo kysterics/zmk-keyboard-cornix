@@ -235,7 +235,7 @@
 
         cs_a {
             bindings = <&kp LS(LC(A))>;
-            key-positions = <24 13>;
+            key-positions = <13 14>;
         };
     };
 
