@@ -152,7 +152,7 @@
         };
 
         f19 {
-            bindings = <&switch_audio>;
+            bindings = <&kp F19>;
             key-positions = <15 16 14>;
         };
 
@@ -233,9 +233,9 @@
             require-prior-idle-ms = <150>;
         };
 
-        cs_a {
-            bindings = <&kp LS(LC(A))>;
-            key-positions = <13 14>;
+        change_audio_source {
+            bindings = <&switch_audio>;
+            key-positions = <13 15>;
         };
     };
 
@@ -258,7 +258,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LA(LC(LG(Q)))>,
-                <&macro_wait_time 500>,
+                <&macro_wait_time 1000>,
                 <&kp LA(LC(LG(Q)))>,
                 <&macro_wait_time 250>,
                 <&kp LS(F10)>;
