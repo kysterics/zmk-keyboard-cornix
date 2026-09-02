@@ -236,6 +236,13 @@
         change_audio_source {
             bindings = <&switch_audio>;
             key-positions = <13 15>;
+            slow-release;
+        };
+
+        cs_a {
+            bindings = <&kp LS(LC(A))>;
+            key-positions = <13 14>;
+            slow-release;
         };
     };
 
