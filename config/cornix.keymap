@@ -269,10 +269,12 @@
                 <&macro_tap>,
                 <&kp LA(LC(LG(Q)))>,
                 <&macro_wait_time 500>,
+                <&kp ESC>,
+                <&macro_wait_time 500>,
                 <&kp LS(F10)>;
 
             label = "SWITCH_AUDIO";
-            tap-ms = <250>;
+            tap-ms = <300>;
         };
     };
 
