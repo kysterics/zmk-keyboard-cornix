@@ -266,7 +266,7 @@
             bindings =
                 <&kp LA(LC(LG(Q)))>,
                 <&macro_wait_time 250>,
-                <&key_repeat>,
+                <&kp ESCAPE>,
                 <&macro_wait_time 150>,
                 <&kp LS(F10)>;
 
