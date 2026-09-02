@@ -259,6 +259,7 @@
                 <&kp PAUSE_BREAK>;
 
             label = "COPY_N_DICT_LOOKUP";
+            tap-ms = <150>;
         };
 
         switch_audio: switch_audio {
@@ -273,6 +274,7 @@
                 <&kp LS(F10)>;
 
             label = "SWITCH_AUDIO";
+            tap-ms = <250>;
         };
     };
 
