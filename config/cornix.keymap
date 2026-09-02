@@ -265,6 +265,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LA(LC(LG(Q)))>,
+                <&macro_release>,
                 <&macro_wait_time 250>,
                 <&kp ESCAPE>,
                 <&macro_wait_time 150>,
