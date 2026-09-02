@@ -259,7 +259,7 @@
                 <&kp PAUSE_BREAK>;
 
             label = "COPY_N_DICT_LOOKUP";
-            tap-ms = <150>;
+            tap-ms = <250>;
         };
 
         switch_audio: switch_audio {
@@ -268,8 +268,6 @@
             bindings =
                 <&macro_tap>,
                 <&kp LA(LC(LG(Q)))>,
-                <&macro_wait_time 1000>,
-                <&kp ESCAPE>,
                 <&macro_wait_time 500>,
                 <&kp LS(F10)>;
 
