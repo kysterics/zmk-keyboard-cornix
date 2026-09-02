@@ -152,7 +152,7 @@
         };
 
         f19 {
-            bindings = <&kp F19>;
+            bindings = <&switch_audio>;
             key-positions = <15 16 14>;
         };
 
@@ -210,19 +210,19 @@
         };
 
         vol_down {
-            bindings = <&kp LG(F19)>;
+            bindings = <&kp LC(F19)>;
             key-positions = <26 27>;
             require-prior-idle-ms = <150>;
         };
 
         vol_up {
-            bindings = <&kp LC(LG(F19))>;
+            bindings = <&kp LA(F19)>;
             key-positions = <27 28>;
             require-prior-idle-ms = <150>;
         };
 
         media_pause {
-            bindings = <&kp C_PLAY_PAUSE>;
+            bindings = <&kp F19>;
             key-positions = <28 26>;
             require-prior-idle-ms = <150>;
         };
