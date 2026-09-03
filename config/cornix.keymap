@@ -265,12 +265,10 @@
         switch_audio: switch_audio {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-
             wait-ms = <50>;
             tap-ms = <50>;
-
             bindings =
-                <&kp LA(LC(LG(Q)))>,
+                <&kp LA(LC(Q))>,
                 <&macro_wait_time 500>,
                 <&kp ESC>,
                 <&macro_wait_time 500>,
