@@ -272,7 +272,7 @@
             bindings =
                 <&kp LA(LC(LG(Q)))>,
                 <&macro_wait_time 1000>,
-                <&kp ESC>,
+                <&kp LA(LC(LG(Q)))>,
                 <&macro_wait_time 1000>,
                 <&kp LS(F10)>;
 
