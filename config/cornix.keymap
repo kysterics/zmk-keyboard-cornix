@@ -235,7 +235,7 @@
 
         change_audio_source {
             bindings = <&switch_audio>;
-            key-positions = <13 15>;
+            key-positions = <1 2>;
         };
 
         cs_a {
@@ -265,6 +265,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&macro_wait_time 500>,
                 <&macro_press>,
                 <&kp LCTRL>,
                 <&macro_press>,
@@ -276,7 +277,6 @@
                 <&macro_wait_time 500>,
                 <&macro_tap>,
                 <&kp Q>,
-                <&macro_wait_time 500>,
                 <&macro_release>,
                 <&kp LGUI>,
                 <&macro_release>,
