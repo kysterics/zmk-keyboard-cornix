@@ -283,7 +283,7 @@
                 <&kp LALT>,
                 <&macro_release>,
                 <&kp LCTRL>,
-                <&macro_wait_time 500>,
+                <&macro_wait_time 250>,
                 <&macro_tap>,
                 <&kp LS(F10)>;
 
