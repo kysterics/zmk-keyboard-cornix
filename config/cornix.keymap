@@ -288,6 +288,7 @@
                 <&kp LS(F10)>;
 
             label = "SWITCH_AUDIO";
+            tap-ms = <100>;
         };
     };
 
