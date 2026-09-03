@@ -266,14 +266,23 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
 
-            wait-ms = <100>;
+            wait-ms = <30>;
             tap-ms = <50>;
 
             bindings =
-                <&kp LA(LC(LG(Q)))>,
-                <&macro_wait_time 1000>,
-                <&kp LA(LC(LG(Q)))>,
-                <&macro_wait_time 1000>,
+                <&macro_press &kp LCTRL>,
+                <&macro_press &kp LALT>,
+                <&macro_press &kp LGUI>,
+                <&macro_tap &kp Q>,
+                <&macro_wait_time 500>,
+                <&macro_tap &kp Q>,
+                <&macro_wait_time 500>,
+                <&macro_release &kp LGUI>,
+                <&macro_release &kp LALT>,
+                <&macro_release &kp LCTRL>,
+                <&macro_wait_time 500>,
+                <&kp ESC>,
+                <&macro_wait_time 500>,
                 <&kp LS(F10)>;
 
             label = "SWITCH_AUDIO";
