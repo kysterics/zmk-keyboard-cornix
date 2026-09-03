@@ -236,7 +236,6 @@
         change_audio_source {
             bindings = <&switch_audio>;
             key-positions = <13 15>;
-            slow-release;
         };
 
         cs_a {
@@ -265,21 +264,27 @@
         switch_audio: switch_audio {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-
             wait-ms = <30>;
             tap-ms = <50>;
-
             bindings =
-                <&macro_press &kp LCTRL>,
-                <&macro_press &kp LALT>,
-                <&macro_press &kp LGUI>,
-                <&macro_tap &kp Q>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp Q>,
                 <&macro_wait_time 500>,
-                <&macro_tap &kp Q>,
+                <&macro_tap>,
+                <&kp Q>,
                 <&macro_wait_time 500>,
-                <&macro_release &kp LGUI>,
-                <&macro_release &kp LALT>,
-                <&macro_release &kp LCTRL>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_release>,
+                <&kp LCTRL>,
                 <&macro_wait_time 500>,
                 <&kp ESC>,
                 <&macro_wait_time 500>,
