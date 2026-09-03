@@ -264,8 +264,6 @@
         switch_audio: switch_audio {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <50>;
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
@@ -286,8 +284,7 @@
                 <&macro_release>,
                 <&kp LCTRL>,
                 <&macro_wait_time 500>,
-                <&kp ESC>,
-                <&macro_wait_time 500>,
+                <&macro_tap>,
                 <&kp LS(F10)>;
 
             label = "SWITCH_AUDIO";
