@@ -237,12 +237,6 @@
             bindings = <&switch_audio>;
             key-positions = <1 2>;
         };
-
-        cs_a {
-            bindings = <&kp LS(LC(A))>;
-            key-positions = <13 14>;
-            slow-release;
-        };
     };
 
     macros {
@@ -274,7 +268,6 @@
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp Q>,
-                <&macro_wait_time 750>,
                 <&macro_tap>,
                 <&kp Q>,
                 <&macro_release>,
@@ -287,7 +280,7 @@
                 <&kp LS(F10)>;
 
             label = "SWITCH_AUDIO";
-            tap-ms = <100>;
+            tap-ms = <150>;
         };
     };
 
